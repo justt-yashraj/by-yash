@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Valentine 💖</title>
+  <style>
+    body {
+      background: #ffe6f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial;
+    }
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin: 10px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    #yes { background: pink; }
+    #no { background: lightgray; position: absolute; }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h1>Will you be my Valentine Priyanshi? 💘</h1>
+  <button id="yes" onclick="alert('Yayyy 💖')">Yes ❤️</button>
+  <button id="no" onmouseover="moveNo()">No 😜</button>
+</div>
+
+<script>
+function moveNo() {
+  const btn = document.getElementById("no");
+  btn.style.left = Math.random() * window.innerWidth + "px";
+  btn.style.top = Math.random() * window.innerHeight + "px";
+}
+</script>
+
+</body>
+</html>
